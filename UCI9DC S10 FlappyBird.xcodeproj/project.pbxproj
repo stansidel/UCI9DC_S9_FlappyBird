@@ -14,6 +14,11 @@
 		F67EACD61CD0F9140076D14C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67EACD41CD0F9140076D14C /* Main.storyboard */; };
 		F67EACD81CD0F9150076D14C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67EACD71CD0F9150076D14C /* Assets.xcassets */; };
 		F67EACDB1CD0F9150076D14C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67EACD91CD0F9150076D14C /* LaunchScreen.storyboard */; };
+		F67EACE81CD0FB1C0076D14C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F67EACE31CD0FB1C0076D14C /* bg.png */; };
+		F67EACE91CD0FB1C0076D14C /* flappy1.png in Resources */ = {isa = PBXBuildFile; fileRef = F67EACE41CD0FB1C0076D14C /* flappy1.png */; };
+		F67EACEA1CD0FB1C0076D14C /* flappy2.png in Resources */ = {isa = PBXBuildFile; fileRef = F67EACE51CD0FB1C0076D14C /* flappy2.png */; };
+		F67EACEB1CD0FB1C0076D14C /* pipe1.png in Resources */ = {isa = PBXBuildFile; fileRef = F67EACE61CD0FB1C0076D14C /* pipe1.png */; };
+		F67EACEC1CD0FB1C0076D14C /* pipe2.png in Resources */ = {isa = PBXBuildFile; fileRef = F67EACE71CD0FB1C0076D14C /* pipe2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		F67EACD71CD0F9150076D14C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F67EACDA1CD0F9150076D14C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F67EACDC1CD0F9150076D14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F67EACE31CD0FB1C0076D14C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		F67EACE41CD0FB1C0076D14C /* flappy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy1.png; sourceTree = "<group>"; };
+		F67EACE51CD0FB1C0076D14C /* flappy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy2.png; sourceTree = "<group>"; };
+		F67EACE61CD0FB1C0076D14C /* pipe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipe1.png; sourceTree = "<group>"; };
+		F67EACE71CD0FB1C0076D14C /* pipe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipe2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		F67EACCB1CD0F9140076D14C /* UCI9DC S10 FlappyBird */ = {
 			isa = PBXGroup;
 			children = (
+				F67EACE21CD0FB010076D14C /* Images */,
 				F67EACCC1CD0F9140076D14C /* AppDelegate.swift */,
 				F67EACCE1CD0F9140076D14C /* GameScene.sks */,
 				F67EACD01CD0F9140076D14C /* GameScene.swift */,
@@ -68,6 +79,18 @@
 				F67EACDC1CD0F9150076D14C /* Info.plist */,
 			);
 			path = "UCI9DC S10 FlappyBird";
+			sourceTree = "<group>";
+		};
+		F67EACE21CD0FB010076D14C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F67EACE31CD0FB1C0076D14C /* bg.png */,
+				F67EACE41CD0FB1C0076D14C /* flappy1.png */,
+				F67EACE51CD0FB1C0076D14C /* flappy2.png */,
+				F67EACE61CD0FB1C0076D14C /* pipe1.png */,
+				F67EACE71CD0FB1C0076D14C /* pipe2.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,10 +151,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67EACEA1CD0FB1C0076D14C /* flappy2.png in Resources */,
+				F67EACE81CD0FB1C0076D14C /* bg.png in Resources */,
 				F67EACCF1CD0F9140076D14C /* GameScene.sks in Resources */,
+				F67EACEB1CD0FB1C0076D14C /* pipe1.png in Resources */,
 				F67EACDB1CD0F9150076D14C /* LaunchScreen.storyboard in Resources */,
+				F67EACEC1CD0FB1C0076D14C /* pipe2.png in Resources */,
 				F67EACD81CD0F9150076D14C /* Assets.xcassets in Resources */,
 				F67EACD61CD0F9140076D14C /* Main.storyboard in Resources */,
+				F67EACE91CD0FB1C0076D14C /* flappy1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
