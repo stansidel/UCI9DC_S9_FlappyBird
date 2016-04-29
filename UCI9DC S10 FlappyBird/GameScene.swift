@@ -16,6 +16,7 @@ class GameScene: SKScene {
         /* Setup your scene here */
         addBgNode()
         addBirdNode()
+        addGround()
     }
 
     private func addBirdNode() {
@@ -24,6 +25,10 @@ class GameScene: SKScene {
         let animation = SKAction.animateWithTextures([birdTexture, birdTexture2], timePerFrame: 0.1)
         let makeBirdFlap = SKAction.repeatActionForever(animation)
         bird = SKSpriteNode(texture: birdTexture)
+
+        bird.physicsBody = SKPhysicsBody(circleOfRadius: birdTexture.size().height / 2)
+        bird.physicsBody!.dynamic = true
+
         bird.zPosition = 1
         bird.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         bird.runAction(makeBirdFlap)
@@ -46,6 +51,15 @@ class GameScene: SKScene {
             self.addChild(bg)
         }
 
+    }
+
+    private func addGround() {
+        let ground = SKNode()
+        ground.position = CGPoint(x: 0, y: 0)
+        ground.physicsBody = SKPhysicsBody(rectangleOfSize: CGSize(width: self.frame.size.width, height: 1))
+        ground.physicsBody!.dynamic = false
+
+        self.addChild(ground)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
