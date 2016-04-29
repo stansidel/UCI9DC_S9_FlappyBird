@@ -63,7 +63,9 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
+        /* Called when a touch begins */
+        bird.physicsBody!.velocity = CGVector(dx: 0, dy: 0)
+        bird.physicsBody!.applyImpulse(CGVector(dx: 0, dy: 50))
     }
    
     override func update(currentTime: CFTimeInterval) {
